@@ -1,6 +1,7 @@
 ---
 collections:
     - cyberark.conjur
+    - cyberark.conjur_collection
 roles:
     - role: cyberark.conjur-host-identity
       conjur_appliance_url: "http://10.36.93.79:61010"
