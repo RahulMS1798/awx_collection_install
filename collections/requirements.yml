@@ -1,3 +1,11 @@
 ---
 collections:
     - cyberark.conjur
+roles:
+    - role: cyberark.conjur-host-identity
+      conjur_appliance_url: "http://10.36.93.79:61010"
+      conjur_account: "myConjurAccount"
+      conjur_host_factory_token: "wbtpqv94g7v62eam3pafv7h942cn2dge2k160vkfgqwm91z426sp"
+      conjur_host_name: "{{inventory_hostname}}"
+      conjur_validate_certs: "false"
+      conjur_ssl_certificate: "{{ lookup('file', 'admin_data') }}"
